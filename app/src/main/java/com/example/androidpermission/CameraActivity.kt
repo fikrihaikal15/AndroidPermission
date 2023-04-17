@@ -15,7 +15,7 @@ class CameraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCameraBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_camera)
+        setContentView(binding.root)
 
         binding.btnGallery.setOnClickListener {
             intentGallery()
